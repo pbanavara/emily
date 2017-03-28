@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Axoni</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Axoni</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class = "emailContents">
+            <div class = "row subContents" id = "subContents">
+                <div class = "row" id = "meetingEmail">
+                    <div class = "col-md-6">
+                        <p class = "lead"> Meeting Email </p>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">From</span>
+                            <input type="text" class="from form-control" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">To</span>
+                            <input type="text" class="to form-control" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon3">Subject</span>
+                            <input type="text" class="subject form-control" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon4">Text</span>
+                            <textarea class="emailText form-control" rows="5"></textarea>
+                        </div>
+                        <!--
+                        <div class="input-group">
+                            <span class="overrideEmailSpan input-group-addon">Overridden Text</span>
+                            <textarea class="overrideEmailText form-control" rows="5"></textarea>
+                        </div>
+                        -->
+                    </div>
+                    <div id = "meetingRequest" class = "col-md-6">
+                        <p class = "lead">Meeting Request</p>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon11">ID</span>
+                            <input type="text" class="mrId form-control" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <div class = "row childRow">
+                    <p class = "lead"> Outgoing Meeting Emails </p>
+                </div>
+                <div class = "outputMeeting" id = "outputMeeting">
+                    <div class = "row">
+                        <div class = "col-md-8" id = "opMeetingEmail">
+                            <div class="input-group">
+                                <span class="input-group-addon" >From</span>
+                                <input type="text" class="opFrom form-control" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon">To</span>
+                                <input type="text" class="opTo form-control" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon">Subject</span>
+                                <input type="text" class="opSubject form-control" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon">Text</span>
+                                <textarea class="opText form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class = "row">
+                    <p>
+                        <button type="button" class="btn btn-primary recheckButton">Re-check</button>
+                        <button type="button" class="btn btn-primary verifiedButton">Verified, Post to Sendgrid</button>
+                    </p>
+
+                </div>
+                <div class = "row exceptions">
+                    <p class = "lead">Exceptions and debug messages</p>
+                    <textarea class="exceptionText form-control" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/hill.js"></script>
+
+</body>
+
+</html>
